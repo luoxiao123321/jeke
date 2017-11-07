@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+<link href="dashboard.css" rel="stylesheet">
+<style type="text/css">
+	.lxd{display: none}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">模板功能<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">我的团队</a></li>
+            <li><a href="#">项目展示</a></li>
+            <li><a href="#">我们的服务</a></li>
+            <li><a href="#">客户评价</a></li>
+            <li><a href="#">新闻</a></li>
+          </ul>
+        </div>
+        <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>title</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+		<!-- 我的团队 -->
+		<div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>img</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+		<!--项目展示-->
+		<div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>detail</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <!-- 我们的服务 -->
+        <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>author</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <!-- 客户评价 -->
+        <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>time</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <!-- 新闻 -->
+        <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          	<h1 class="page-header">Dashboard</h1>
+
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">新增</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			      </div>
+			      <div class="modal-body">
+			      	
+			      	<h3>标题:</h3>
+			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<h3>内容:</h3>
+			       	<div class="lxd_alt"></div>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
+			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			      </div>
+			    </div>
+			  </div>
+			</div>	
+          <h2 class="sub-header">Section title</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>time</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    		$(function(){
+				function load(){
+					$.ajax({
+						url:"http://localhost:3000/item/title",
+						type:'GET',
+						success:function(e){
+							$('tbody').html('')
+							for(var i in e){
+								$('tbody').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].detail+'</th><th><button data-toggle="modal" data-target="#myModal" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button"></button></th></tr>')
+							}
+						}
+					})
+				}
+				load()
+				$('tbody').on('click','.lxd_button',function () {
+					console.log(1)
+					var id=$(this).attr('data-lxd')
+					var _this=this
+					$.ajax({
+						url:"http://localhost:3000/item/delete",
+						type:"POST",
+						data:{id:id},
+						success:function(e){
+							load()
+							
+						}
+					})
+				})
+				$('tbody').on('click','.select',function () {
+	                var id = $(this).attr('data-id')
+		            $.ajax({
+		                url:'http://localhost:3000/item/select',
+		                type:"POST",
+		                data:{'id':id},
+		                success:function(e){
+		                  $('.lxd_inp').attr('value',e[0].title)
+		                  $('.lxd_alt').summernote('code',e[0].detail)
+		                  
+		                }
+				    }) 
+				    $('.updata').click(function(){
+	                  	var title=$('.lxd_inp').val();
+//	                  	console.log(title)
+	                  	var detail= $('.lxd_alt').summernote('code')
+//	                  	console.log(detail)
+	                  	$.ajax({
+							url:'http://localhost:3000/item/updata',
+							type:'POST',
+							data:{
+								'id':id,
+								'title':title,
+								'detail':detail
+							},
+							success:function(e){
+								load()
+							}
+						})
+	                })
+				})
+				
+				$('.lxd_alt').summernote()
+				$('.lxd_btn').click(function(){
+					var title=$('.lxd_inp').val()
+					var detail=$('.lxd_alt').summernote('code');
+					$.ajax({
+						url:'http://localhost:3000/item/insert',
+						type:'POST',
+						data:{
+							'title':title,
+							'detail':detail
+						},
+						success:function(e){
+							load()
+                        	$('.lxd_inp').val('')
+						}
+					})
+				})
+			})	
+    </script>
+    <script type="text/javascript">
+    $(function(){
+    	$('.lxd:eq(0)').show()
+    	$('.nav li').click(function(){
+    		var index = $(this).index()
+    		$(this).addClass('active').siblings().removeClass('active')
+    		$('.lxd').hide().eq(index).show()
+    	})
+    })
+    </script>
+</body>
+</html>

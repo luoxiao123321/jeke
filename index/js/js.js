@@ -7,36 +7,36 @@ $(function(){
 			console.log(e)
 		}
 	})
-	var file;
-        function getFiles (el) {
-           file=el.files
-           console.log(file)
-        }
+	// var file;
+ //        function getFiles (el) {
+ //           file=el.files
+ //           console.log(file)
+ //        }
 
-        $('button').click(function(){
-         	var fd = new FormData();
+ //        $('button').click(function(){
+ //         	var fd = new FormData();
 
-       		for(var i = 0;i<file.length;i++){
-        		fd.append('files',file[i])
-        	}
+ //       		for(var i = 0;i<file.length;i++){
+ //        		fd.append('files',file[i])
+ //        	}
 
-       		 console.log(fd)
-       		$.ajax({
-       			url:'http://localhost:3000/img1/img',
-       			type:'POST',
-       			data:fd,
-       			contentType:false,
-       			processData:false,
-       			success:function(e){
- 					console.log(e)
- 					for(i in e){
- 					   $('.box').append("<img src='"+e[i].img+"' />")
- 					}
+ //       		 console.log(fd)
+ //       		$.ajax({
+ //       			url:'http://localhost:3000/img1/img',
+ //       			type:'POST',
+ //       			data:fd,
+ //       			contentType:false,
+ //       			processData:false,
+ //       			success:function(e){
+ // 					console.log(e)
+ // 					for(i in e){
+ // 					   $('.box').append("<img src='"+e[i].img+"' />")
+ // 					}
  					
-       			}
-       		}) 
+ //       			}
+ //       		}) 
 
-        })
+ //        })
     
 
 })
