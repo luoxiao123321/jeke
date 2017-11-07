@@ -4,8 +4,12 @@
 	<meta charset="UTF-8" />
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
 	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
+
+	 <script src="js/stickUp.min.js"></script>
+
 </head>
 <body>
 	<div class="wary">
@@ -23,6 +27,7 @@
 		</div>
 		<!--首页-->
 		<div id="home" class="yi1">
+			<h></h>
 			<nav>
 				<img src="img/loog.png">
 					
@@ -38,6 +43,14 @@
 					</ul>
 					
 			</nav>
+			<ul class="lun">
+				<li></li>
+				<li></li>
+			</ul>
+			<ol class="yuan">
+				<li class="checked"></li>
+				<li></li>
+			</ol>
 			<span>我在灯火阑珊处</span>
 			<i>起飞页是放飞梦想的地方，也是寻梦的地方</i>
 		</div>
@@ -104,66 +117,38 @@
 				</div>
 				<div class="nei">
 					<div class="nei_u">
-						<div class="jieshao">
+						<div class="nei_uu">
+							<div class="jieshao">
 							<i></i>
 							<p class="zuozhe">阿萨德</p>
 							<p class="zhiye">总监</p>
 							<div class="jianjie">sadsadsadsad</div>
-						</div>
+							</div>
 						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
+							<div class="jieshao">
+								<i></i>
+								<p class="zuozhe">阿萨德</p>
+								<p class="zhiye">总监</p>
+								<div class="jianjie">sadsadsadsad</div>
+							</div>
+							
+							<div class="jieshao">
+								<i></i>
+								<p class="zuozhe">阿萨德</p>
+								<p class="zhiye">总监</p>
+								<div class="jianjie">sadsadsadsad</div>
+							</div>
+							
+							<div class="jieshao">
+								<i></i>
+								<p class="zuozhe">阿萨德</p>
+								<p class="zhiye">总监</p>
+								<div class="jianjie">sadsadsadsad</div>
+							</div>
+					</div>
 						
 					</div>
 					
-					<div class="nei_u">
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-						<div class="jieshao">
-							<i></i>
-							<p class="zuozhe">阿萨德</p>
-							<p class="zhiye">总监</p>
-							<div class="jianjie">sadsadsadsad</div>
-						</div>
-						
-					</div>
 					
 					
 				</div>
@@ -305,9 +290,17 @@
 		
 		
 		
-		<script type="text/javascript" src="js/jq.js">
-			
-		</script>
+		<script type="text/javascript" src="js/jq.js"></script>
+		  <script type="text/javascript">
+              //initiating jQuery
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.yi').stickUp();
+                });
+              });
+
+            </script>
 	</div>
 </body>
 </html>
