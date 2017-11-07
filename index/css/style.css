@@ -58,7 +58,7 @@ body{
 	z-index: 1;
 }
 .lun{
-	width: 200%;
+	width: 300%;
 	height: 100%;
 	position: absolute;
 	top: 0;
@@ -90,6 +90,9 @@ body{
 	height: 10px;
 	border-radius: 50%;
 	background: #fff;
+}
+.yuan li img{
+	width: 100%;
 }
 .yuan li.checked{
 	background: red;
@@ -317,16 +320,20 @@ h3{
 	position: relative;
 }
 .nei_u{
-	width: 200%;
+	width: 300%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-.nei_uu{
+.nei_u li{
 	width: 1180px;
 	height: 100%;
 	background: red;
+	float: left;
+	list-style: none;
 }
 .jieshao{
 	width: 284px;
@@ -339,6 +346,10 @@ h3{
 	height: 284px;
 	display: block;
 	background: yellowgreen;
+}
+.jieshao i img{
+	width: 284px;
+	height: 284px;
 }
 .zuozhe{
 	font-size: 16px;
@@ -398,7 +409,8 @@ h3{
 	font-weight: bold;
 }
 .tu{
-	
+	display: none;
+	background: red;
 }
 .tu div{
 	width: 303px;
@@ -409,6 +421,10 @@ h3{
     margin-right: 10px;
     position: relative;
     overflow: hidden;
+}
+.tu div img{
+	width: 303px;
+	height: 181px;
 }
 .tu div:hover i{
 	top: 1px;
@@ -458,7 +474,6 @@ h3{
 .serve_buttom{
 	width: 100%;
 	box-sizing: border-box;
-	background: yellow;
 	padding: 105px 40px;
 	overflow: hidden;
 }
@@ -492,7 +507,7 @@ h3{
 #evaluate{
 	width: 100%;
 	height: 690px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 }
 .hui{
@@ -529,7 +544,6 @@ h4{
 .evaluate_buttom{
 	width: 930px;
 	height: 202px;
-	background: yellowgreen;
 	margin: 0 auto;
 }
 .l,.r{
@@ -542,13 +556,47 @@ h4{
 	color: #fff;
 	text-align: center;
 	line-height: 32px;
+	border: none;
+	outline: none;
 }
 .n{
 	width: 866px;
 	height: 100%;
-	background: red;
 	float: left;
+	position: relative;
+	overflow: hidden;
 }
+.n_ul{
+	width: 300%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.n_ul li{
+	width: 866px;
+	height: 100%;
+	float: left;
+	background: yellow;
+	list-style: none;
+}
+.n_ul li+li{
+	background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #news{
