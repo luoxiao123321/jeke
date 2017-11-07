@@ -1,7 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var fs=require('fs'); 
-var formidable=require('formidable');
 var mysql = require('mysql');
 var pool = mysql.createPool({
 	host:'localhost',
@@ -11,52 +9,56 @@ var pool = mysql.createPool({
 })
 
 /* GET home page. */
-router.post('/modelfunction', function(req, res, next) {
-  res.header('Access-Control-Allow-Origin','*')
-  pool.query('SELECT * FROM model',function(err,rows){
-  	res.send(rows)
-  })
-});
-router.post('/modelinsert', function(req, res, next) {
-	var img = req.body.img
-	var title = req.body.title
-	var detail = req.body.detail
-  res.header('Access-Control-Allow-Origin','*')
-  pool.query('INSERT INTO model(img,title,detail) VALUES ("'+img+'","'+title+'","'+detail+'")',function(err,rows){
-  	res.send(rows)
-  })
+router.get('/title',function(req,res,next){
+	connection.query('SELECT id,title,detail FROM model', function(err, rows, fields) {
+    	res.header('Access-Control-Allow-Origin',"*")
+        if (err) throw err;
+        	res.send(rows);
+   });
 })
-router.post('/img',function(req,res){
-	res.header('Access-Control-Allow-Origin','*');
-	var form = new formidable.IncomingForm();
-	form.uploadDir = 'public/upload'
-	form.parse(req,function(err,fields,files){
-		console.log(fields,files);
-		for(i in files){
-			var file = files[i];
-			var fName = (new Date()).getTime();
-			switch(file.type){
-				case 'image/jpeg':
-				fName = fName+'.jpg';
-				break;
-				case 'image/png':
-				fName = fName + '.png';
-				break;
-				case 'image/gif':
-				fName = fName + '.gif';
-				break;
-			}
-			var newPath = 'public/upload/' + fName
-			fs.renameSync(file.path,newPath);
-		}
-		 pool.query(`INSERT INTO model (img) VALUES ('http://localhost:3000/upload/${fName}')`,function(err,rows){
-    	if(err) throw err;
-    	if(rows){
-    		pool.query('SELECT img FROM model',function(err,rows){
-    			res.send(rows);
-    		})
-    	}
-    })
-	})   
+
+router.post('/delete',function(req,res,next){
+	var abc=req.body.id;
+	connection.query('DELETE FROM model WHERE id='+abc+' ',function(err, rows, fields) {
+	    res.header('Access-Control-Allow-Origin',"*")
+	    if (err) throw err;
+	    res.send(rows);
+	})
+})
+
+router.post('/insert',function(req,res,next){
+	res.header('Access-Control-Allow-Origin',"*")
+	var title=req.body.title;
+	var detail=req.body.detail;
+	connection.query(`INSERT INTO model (title,detail) VALUES ('${title}','${detail}')`, function(err, rows, fields) {
+	    if(rows!=""||rows!=null){
+	        connection.query("SELECT * FROM model",function(err,rows){
+	        	res.send(rows)
+	      	})
+	    }
+   });
+})
+
+
+router.post('/select',function(req,res,next){
+	var id=req.body.id;
+	connection.query(`SELECT id,title,detail FROM model WHERE id=${id}`,function(err, rows, fields) {
+	    res.header('Access-Control-Allow-Origin',"*")
+	    if (err) throw err;
+	    res.send(rows);
+	})
+})
+
+router.post('/updata',function(req,res,next){
+	var id=req.body.id;
+	var title=req.body.title;
+	var detail=req.body.detail;
+	console.log(id,title,detail)
+	connection.query(`UPDATE work SET title='${title}',detail='${detail}' WHERE id=${id}`,function(err, rows, fields) {
+	    res.header('Access-Control-Allow-Origin',"*")
+	    if (err) throw err;
+	    console.log(1)
+	    res.send(rows);
+	})
 })
 module.exports = router;
