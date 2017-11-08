@@ -11,7 +11,7 @@ var pool = mysql.createPool({
 /* GET home page. */
 // 模板功能
 router.get('/title',function(req,res,next){
-	pool.query('SELECT id,title,cont FROM model', function(err, rows, fields) {
+	pool.query('SELECT id,title,neirong FROM model', function(err, rows, fields) {
     	res.header('Access-Control-Allow-Origin',"*")
         if (err) throw err;
         	res.send(rows);
@@ -30,8 +30,8 @@ router.post('/delete',function(req,res,next){
 router.post('/insert',function(req,res,next){
 	res.header('Access-Control-Allow-Origin',"*")
 	var title=req.body.title;
-	var cont = req.body.cont
-	pool.query(`INSERT INTO model (title,cont) VALUES ('${title}','${cont}')`, function(err, rows, fields) {
+	var neirong = req.body.neirong
+	pool.query(`INSERT INTO model (title,neirong) VALUES ('${title}','${neirong}')`, function(err, rows, fields) {
 	    if(rows!=""||rows!=null){
 	        pool.query("SELECT * FROM model",function(err,rows){
 	        	res.send(rows)
@@ -43,7 +43,7 @@ router.post('/insert',function(req,res,next){
 
 router.post('/select',function(req,res,next){
 	var id=req.body.id;
-	pool.query(`SELECT id,title,cont FROM model WHERE id=${id}`,function(err, rows, fields) {
+	pool.query(`SELECT id,title,neirong FROM model WHERE id=${id}`,function(err, rows, fields) {
 	    res.header('Access-Control-Allow-Origin',"*")
 	    if (err) throw err;
 	    res.send(rows);
@@ -53,15 +53,13 @@ router.post('/select',function(req,res,next){
 router.post('/updata',function(req,res,next){
 	var id=req.body.id;
 	var title=req.body.title;
-	var cont = req.body.cont
+	var neirong = req.body.neirong
 	console.log(id,title)
-	pool.query(`UPDATE model SET title='${title}',cont='${cont}' WHERE id=${id}`,function(err, rows, fields) {
+	pool.query(`UPDATE model SET title='${title}',neirong='${neirong}' WHERE id=${id}`,function(err, rows, fields) {
 	    res.header('Access-Control-Allow-Origin',"*")
 	    if (err) throw err;
 	    console.log(1)
 	    res.send(rows);
 	})
 })
-
-// 我的团队
 module.exports = router;
