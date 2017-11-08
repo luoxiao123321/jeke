@@ -105,7 +105,6 @@ $('.left').click(function(){
 var numm=0,ww=866,timerr=null
 $('.n_ul').children().first().clone().appendTo('.n_ul')
 $('.r').click(function(){
-	console.log(11)
 	if(!$('.n_ul').is(':animated')){
 		numm++
 		$('.n_ul').animate({
