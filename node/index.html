@@ -339,7 +339,7 @@
 					var id=$(this).attr('data-lxd')
 					var _this=this
 					$.ajax({
-						url:"http://localhost:3000/item/delete",
+						url:"http://localhost:3000/delete",
 						type:"POST",
 						data:{id:id},
 						success:function(e){
@@ -351,7 +351,7 @@
 				$('tbody').on('click','.select',function () {
 	                var id = $(this).attr('data-id')
 		            $.ajax({
-		                url:'http://localhost:3000/item/select',
+		                url:'http://localhost:3000/select',
 		                type:"POST",
 		                data:{'id':id},
 		                success:function(e){
@@ -366,7 +366,7 @@
 	                  	var detail= $('.lxd_alt').summernote('code')
 //	                  	console.log(detail)
 	                  	$.ajax({
-							url:'http://localhost:3000/item/updata',
+							url:'http://localhost:3000/updata',
 							type:'POST',
 							data:{
 								'id':id,
@@ -385,7 +385,7 @@
 					var title=$('.lxd_inp').val()
 					var detail=$('.lxd_alt').summernote('code');
 					$.ajax({
-						url:'http://localhost:3000/item/insert',
+						url:'http://localhost:3000/insert',
 						type:'POST',
 						data:{
 							'title':title,
