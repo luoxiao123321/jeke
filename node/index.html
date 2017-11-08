@@ -49,7 +49,6 @@
             <li><a href="#">我的团队</a></li>
             <li><a href="#">项目展示</a></li>
             <li><a href="#">我们的服务</a></li>
-            <li><a href="#">客户评价</a></li>
             <li><a href="#">新闻</a></li>
           </ul>
         </div>
@@ -103,7 +102,7 @@
                   <th>内容</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="tbody">
               </tbody>
             </table>
           </div>
@@ -127,16 +126,16 @@
 			      <div class="modal-body">
 			      	
 			      	<h3>标题:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<input type="text" class="form-control lxd_inp1" id="exampleInputName2" placeholder="title">
 			      	<h3>职位:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="post">
+			      	<input type="text" class="form-control lxd_inp2" id="exampleInputName2" placeholder="post">
 			      	<h3>内容:</h3>
-			       	<div class="lxd_alt"></div>
+			       	<div class="lxd_alt1"></div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
-			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			        <button type="button" class="btn btn-primary lxd_btn1">Save changes</button>
+			        <button class="btn btn-default updata1" data-dismiss="modal">修改</button>			        
 			      </div>
 			    </div>
 			  </div>
@@ -147,10 +146,12 @@
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>img</th>
+                  <th>标题</th>
+                  <th>作者</th>
+                  <th>内容</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="tbody1">
               </tbody>
             </table>
           </div>
@@ -160,10 +161,10 @@
 		<div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           	<h1 class="page-header">Dashboard</h1>
 
-          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">新增</button>
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">新增</button>
 
 			<!-- Modal -->
-			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -172,56 +173,7 @@
 			      </div>
 			      <div class="modal-body">
 			      	
-			      	<h3>标题:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
-			      	<h3>内容:</h3>
-			       	<div class="lxd_alt"></div>
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
-			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
-			      </div>
-			    </div>
-			  </div>
-			</div>	
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-          </div>
-          
-        </div>
-        <!-- 我们的服务 -->
-        <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          	<h1 class="page-header">Dashboard</h1>
-
-          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">新增</button>
-
-			<!-- Modal -->
-			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-			      </div>
-			      <div class="modal-body">
 			      	
-			      	<h3>标题:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
-			      	<h3>内容:</h3>
-			       	<div class="lxd_alt"></div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -246,14 +198,15 @@
           </div>
           
         </div>
-        <!-- 客户评价 -->
+        
+        <!-- 我们的服务 -->
         <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           	<h1 class="page-header">Dashboard</h1>
 
-          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal4">新增</button>
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">新增</button>
 
 			<!-- Modal -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -261,16 +214,17 @@
 			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
 			      </div>
 			      <div class="modal-body">
-			      	
+
+			      	<!-- <input type="file" name="file"> -->
 			      	<h3>标题:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<input type="text" class="form-control lxd_inp3" id="exampleInputName2" placeholder="title">
 			      	<h3>内容:</h3>
-			       	<div class="lxd_alt"></div>
+			       	<div class="lxd_alt2"></div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
-			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			        <button type="button" class="btn btn-primary lxd_btn2">Save changes</button>
+			        <button class="btn btn-default updata2" data-dismiss="modal">修改</button>			        
 			      </div>
 			    </div>
 			  </div>
@@ -280,11 +234,13 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>time</th>
+                  <th>id</th>
+                  <th>标题</th>
+                  <th>图片</th>
+                  <th>内容</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="tbody2">
               </tbody>
             </table>
           </div>
@@ -294,10 +250,10 @@
         <div class="lxd col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           	<h1 class="page-header">Dashboard</h1>
 
-          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal5">新增</button>
+          	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">新增</button>
 
 			<!-- Modal -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -307,14 +263,16 @@
 			      <div class="modal-body">
 			      	
 			      	<h3>标题:</h3>
-			      	<input type="text" class="form-control lxd_inp" id="exampleInputName2" placeholder="title">
+			      	<input type="text" class="form-control lxd_inp4" id="exampleInputName2" placeholder="title">
+			      	<h3>作者:</h3>
+			      	<input type="text" class="form-control lxd_inp5" id="exampleInputName2" placeholder="author">
 			      	<h3>内容:</h3>
-			       	<div class="lxd_alt"></div>
+			       	<div class="lxd_alt3"></div>
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			        <button type="button" class="btn btn-primary lxd_btn">Save changes</button>
-			        <button class="btn btn-default updata" data-dismiss="modal">修改</button>			        
+			        <button type="button" class="btn btn-primary lxd_btn3">Save changes</button>
+			        <button class="btn btn-default updata3" data-dismiss="modal">修改</button>			        
 			      </div>
 			    </div>
 			  </div>
@@ -324,11 +282,13 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>time</th>
+                  <th>id</th>
+                  <th>标题</th>
+                  <th>作者</th>
+                  <th>内容</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="tbody3">
               </tbody>
             </table>
           </div>
@@ -344,16 +304,15 @@
 						url:"http://localhost:3000/title",
 						type:'GET',
 						success:function(e){
-							$('tbody').html('')
+							$('.tbody').html('')
 							for(var i in e){
-								$('tbody').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].neirong+'</th><th><button data-toggle="modal" data-target="#myModal" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button"></button></th></tr>')
+								$('.tbody').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].neirong+'</th><th><button data-toggle="modal" data-target="#myModal" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button"></button></th></tr>')
 							}
 						}
 					})
 				}
 				load()
-				$('tbody').on('click','.lxd_button',function () {
-					console.log(1)
+				$('.tbody').on('click','.lxd_button',function () {
 					var id=$(this).attr('data-lxd')
 					var _this=this
 					$.ajax({
@@ -366,8 +325,9 @@
 						}
 					})
 				})
-				$('tbody').on('click','.select',function () {
+				$('.tbody').on('click','.select',function () {
 	                var id = $(this).attr('data-id')
+	                var _this=$(this)
 		            $.ajax({
 		                url:'http://localhost:3000/select',
 		                type:"POST",
@@ -375,12 +335,11 @@
 		                success:function(e){
 		                  $('.lxd_inp').attr('value',e[0].title)
 		                  $('.lxd_alt').summernote('code',e[0].neirong)
-		                  
+
 		                }
 				    }) 
 				    $('.updata').click(function(){
 	                  	var title=$('.lxd_inp').val();
-//	                  	console.log(title)
 	                  	var neirong= $('.lxd_alt').summernote('code')
 	                  	$.ajax({
 							url:'http://localhost:3000/updata',
@@ -416,6 +375,311 @@
 				})
 			})
 	</script>
+	<!-- 团队AJAX -->
+	<script type="text/javascript">
+		$(function(){
+			$('.lxd_alt1').summernote()
+			const url = "http://localhost:3000/item/"
+			function load1(){
+				$.ajax({
+						url:url+"title",
+						type:'GET',
+						success:function(e){
+							$('.tbody1').html('')
+							for(var i in e){
+								$('.tbody1').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].post+'</th><th>'+e[i].content+'</th><th><button data-toggle="modal" data-target="#myModal1" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select1"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button1"></button></th></tr>')
+							}
+						}
+					})
+			}
+			load1()
+			$('.lxd_btn1').click(function(){
+				var title=$('.lxd_inp1').val()
+				var post=$('.lxd_inp2').val()
+				console.log(post)
+				var content=$('.lxd_alt1').summernote('code');
+				$.ajax({
+				url:url+"insert",
+				type:'post',
+				data:{
+					'title':title,
+					'post':post,
+					'content':content,
+				},
+				success:function(e){
+					load1()
+                    $('.lxd_inp1').val('')
+                    $('.lxd_inp2').val('')
+				}
+			})
+			})
+			$('.tbody1').on('click','.lxd_button1',function () {
+					console.log(1)
+					var id=$(this).attr('data-lxd')
+					var _this=this
+					$.ajax({
+						url:url+"delete",
+						type:"POST",
+						data:{id:id},
+						success:function(e){
+							load1()
+						}
+					})
+				})
+			$('.tbody1').on('click','.select1',function () {
+	                var id = $(this).attr('data-id')
+	                var _this=$(this)
+		            $.ajax({
+		                url:url+'select',
+		                type:"POST",
+		                data:{'id':id},
+		                success:function(e){
+		                  $('.lxd_inp1').attr('value',e[0].title)
+		                  $('.lxd_inp2').attr('value',e[0].post)	
+		                  $('.lxd_alt1').summernote('code',e[0].content)
+
+		                }
+				    }) 
+				    $('.updata1').click(function(){
+	                  	var title=$('.lxd_inp1').val();
+	                  	var post=$('.lxd_inp2').val();
+	                  	var content= $('.lxd_alt1').summernote('code')
+	                  	$.ajax({
+							url:url+'updata',
+							type:'POST',
+							data:{
+								'id':id,
+								'title':title,
+								'post':post,
+								'content':content,
+							},
+							success:function(e){
+								load1()
+							}
+						})
+	                })
+				})
+			
+		})
+	</script>
+<!-- 我们的服务 -->
+<script type="text/javascript">
+		$(function(){
+			$('.lxd_alt2').summernote()
+			function load2(){
+				$.ajax({
+						url:"http://localhost:3000/serve/title",
+						type:'GET',
+						success:function(e){
+							$('.tbody2').html('')
+							for(var i in e){
+								$('.tbody2').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].img+'</th><th>'+e[i].content+'</th><th><button data-toggle="modal" data-target="#myModal2" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select2"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button2"></button></th></tr>')
+							}
+						}
+					})
+			}
+			load2()
+			$('.lxd_btn2').click(function(){
+				var title=$('.lxd_inp3').val()
+				var content=$('.lxd_alt2').summernote('code');
+				$.ajax({
+				url:"http://localhost:3000/serve/insert",
+				type:'post',
+				data:{
+					'title':title,
+					'content':content
+				},
+				success:function(e){
+					load2()
+                    $('.lxd_inp3').val('')
+				}
+			})
+			})
+			$('.tbody2').on('click','.lxd_button2',function () {
+					console.log(1)
+					var id=$(this).attr('data-lxd')
+					var _this=this
+					$.ajax({
+						url:"http://localhost:3000/serve/delete",
+						type:"POST",
+						data:{id:id},
+						success:function(e){
+							load2()
+						}
+					})
+				})
+			$('.tbody2').on('click','.select2',function () {
+	                var id = $(this).attr('data-id')
+	                var _this=$(this)
+		            $.ajax({
+		                url:'http://localhost:3000/serve/select',
+		                type:"POST",
+		                data:{'id':id},
+		                success:function(e){
+		                  $('.lxd_inp3').attr('value',e[0].title)
+		                  $('.lxd_alt2').summernote('code',e[0].content)
+
+		                }
+				    }) 
+				    $('.updata2').click(function(){
+	                  	var title=$('.lxd_inp3').val();
+	                  	var content= $('.lxd_alt2').summernote('code')
+	                  	$.ajax({
+							url:'http://localhost:3000/serve/updata',
+							type:'POST',
+							data:{
+								'id':id,
+								'title':title,
+								'content':content
+							},
+							success:function(e){
+								load2()
+							}
+						})
+	                })
+				})
+			
+		})
+	</script>
+
+<!-- 新闻 -->
+<script type="text/javascript">
+		$(function(){
+			$('.lxd_alt3').summernote()
+			function load3(){
+				$.ajax({
+						url:"http://localhost:3000/news/title",
+						type:'GET',
+						success:function(e){
+							$('.tbody3').html('')
+							for(var i in e){
+								$('.tbody3').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].author+'</th><th>'+e[i].content+'</th><th><button data-toggle="modal" data-target="#myModal3" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select3"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button3"></button></th></tr>')
+							}
+						}
+					})
+			}
+			load3()
+			$('.lxd_btn3').click(function(){
+				var title=$('.lxd_inp4').val()
+				var author=$('.lxd_inp5').val()
+				var content=$('.lxd_alt3').summernote('code');
+				$.ajax({
+				url:"http://localhost:3000/news/insert",
+				type:'post',
+				data:{
+					'title':title,
+					'author':author,
+					'content':content
+				},
+				success:function(e){
+					load3()
+                    $('.lxd_inp4').val('')
+                    $('.lxd_inp5').val('')
+				}
+			})
+			})
+			$('.tbody3').on('click','.lxd_button3',function () {
+					console.log(1)
+					var id=$(this).attr('data-lxd')
+					var _this=this
+					$.ajax({
+						url:"http://localhost:3000/news/delete",
+						type:"POST",
+						data:{id:id},
+						success:function(e){
+							load3()
+						}
+					})
+				})
+			$('.tbody3').on('click','.select3',function () {
+	                var id = $(this).attr('data-id')
+	                var _this=$(this)
+		            $.ajax({
+		                url:'http://localhost:3000/news/select',
+		                type:"POST",
+		                data:{'id':id},
+		                success:function(e){
+		                  $('.lxd_inp4').attr('value',e[0].title)
+		                  $('.lxd_inp5').attr('value',e[0].author)
+		                  $('.lxd_alt3').summernote('code',e[0].content)
+
+		                }
+				    }) 
+				    $('.updata3').click(function(){
+	                  	var title=$('.lxd_inp4').val();
+	                  	var author=$('.lxd_inp5').val();
+	                  	var content= $('.lxd_alt3').summernote('code')
+	                  	$.ajax({
+							url:'http://localhost:3000/news/updata',
+							type:'POST',
+							data:{
+								'id':id,
+								'title':title,
+								'author':author,
+								'content':content
+							},
+							success:function(e){
+								load3()
+							}
+						})
+	                })
+				})
+			
+		})
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script type="text/javascript">
     $(function(){
     	$('.lxd:eq(0)').show()
