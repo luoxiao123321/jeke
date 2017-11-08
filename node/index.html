@@ -98,8 +98,9 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>title</th>
+                  <th>id</th>
+                  <th>标题</th>
+                  <th>内容</th>
                 </tr>
               </thead>
               <tbody>
@@ -189,8 +190,10 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>#</th>
-                  <th>detail</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody>
@@ -371,7 +374,7 @@
 		                data:{'id':id},
 		                success:function(e){
 		                  $('.lxd_inp').attr('value',e[0].title)
-		                  $('.lxd_alt').summernote('code',e[0].cont)
+		                  $('.lxd_alt').summernote('code',e[0].neirong)
 		                  
 		                }
 				    }) 

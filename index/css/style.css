@@ -217,17 +217,40 @@ h2{
 }
 
 .function_buttom{
-	background: red;
+	height: 298px;
 	padding: 0 40px;
+	overflow: hidden;
 }
-.function_buttom_u{
+.function_buttom div{
 	width: 413px;
 	height: 144px;
 	margin-left: 5px;
 	margin-bottom: 5px;
-	background: yellowgreen;
+	float: left;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.function_buttom div img{
+	width: 68px;
+	height: 68px;
+	margin-right: 15px;
 	float: left;
 }
+.function_buttom div span{
+	display: block;
+	font-family: 微软雅黑;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.function_buttom div span+span{
+	display: block;
+	font-family: 微软雅黑;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+
 
 #we{
 	width: 100%;
