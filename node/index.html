@@ -318,17 +318,16 @@
 
       </div>
     </div>
-
-    <script type="text/javascript">
-    		$(function(){
+	<script type="text/javascript">
+			$(function(){
 				function load(){
 					$.ajax({
-						url:"http://localhost:3000/item/title",
+						url:"http://localhost:3000/title",
 						type:'GET',
 						success:function(e){
 							$('tbody').html('')
 							for(var i in e){
-								$('tbody').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].detail+'</th><th><button data-toggle="modal" data-target="#myModal" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button"></button></th></tr>')
+								$('tbody').append('<tr><th>'+e[i].id+'</th><th>'+e[i].title+'</th><th>'+e[i].cont+'</th><th><button data-toggle="modal" data-target="#myModal" data-id="'+e[i].id+'" class="btn btn-default glyphicon glyphicon-edit select"></button ><button data-lxd="'+e[i].id+'" class="btn btn-danger glyphicon glyphicon-trash lxd_button"></button></th></tr>')
 							}
 						}
 					})
@@ -339,7 +338,7 @@
 					var id=$(this).attr('data-lxd')
 					var _this=this
 					$.ajax({
-						url:"http://localhost:3000/item/delete",
+						url:"http://localhost:3000/delete",
 						type:"POST",
 						data:{id:id},
 						success:function(e){
@@ -351,27 +350,27 @@
 				$('tbody').on('click','.select',function () {
 	                var id = $(this).attr('data-id')
 		            $.ajax({
-		                url:'http://localhost:3000/item/select',
+		                url:'http://localhost:3000/select',
 		                type:"POST",
 		                data:{'id':id},
 		                success:function(e){
 		                  $('.lxd_inp').attr('value',e[0].title)
-		                  $('.lxd_alt').summernote('code',e[0].detail)
+		                  $('.lxd_alt').summernote('code',e[0].cont)
 		                  
 		                }
 				    }) 
 				    $('.updata').click(function(){
 	                  	var title=$('.lxd_inp').val();
 //	                  	console.log(title)
-	                  	var detail= $('.lxd_alt').summernote('code')
+	                  	var cont= $('.lxd_alt').summernote('code')
 //	                  	console.log(detail)
 	                  	$.ajax({
-							url:'http://localhost:3000/item/updata',
+							url:'http://localhost:3000/updata',
 							type:'POST',
 							data:{
 								'id':id,
 								'title':title,
-								'detail':detail
+								'cont':cont
 							},
 							success:function(e){
 								load()
@@ -383,13 +382,13 @@
 				$('.lxd_alt').summernote()
 				$('.lxd_btn').click(function(){
 					var title=$('.lxd_inp').val()
-					var detail=$('.lxd_alt').summernote('code');
+					var cont=$('.lxd_alt').summernote('code');
 					$.ajax({
-						url:'http://localhost:3000/item/insert',
+						url:'http://localhost:3000/insert',
 						type:'POST',
 						data:{
 							'title':title,
-							'detail':detail
+							'cont':cont
 						},
 						success:function(e){
 							load()
@@ -397,8 +396,8 @@
 						}
 					})
 				})
-			})	
-    </script>
+			})
+	</script>
     <script type="text/javascript">
     $(function(){
     	$('.lxd:eq(0)').show()

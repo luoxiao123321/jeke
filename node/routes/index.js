@@ -9,8 +9,9 @@ var pool = mysql.createPool({
 })
 
 /* GET home page. */
+// 模板功能
 router.get('/title',function(req,res,next){
-	connection.query('SELECT id,title,detail FROM model', function(err, rows, fields) {
+	pool.query('SELECT id,title,cont FROM model', function(err, rows, fields) {
     	res.header('Access-Control-Allow-Origin',"*")
         if (err) throw err;
         	res.send(rows);
@@ -19,7 +20,7 @@ router.get('/title',function(req,res,next){
 
 router.post('/delete',function(req,res,next){
 	var abc=req.body.id;
-	connection.query('DELETE FROM model WHERE id='+abc+' ',function(err, rows, fields) {
+	pool.query('DELETE FROM model WHERE id='+abc+' ',function(err, rows, fields) {
 	    res.header('Access-Control-Allow-Origin',"*")
 	    if (err) throw err;
 	    res.send(rows);
@@ -29,10 +30,10 @@ router.post('/delete',function(req,res,next){
 router.post('/insert',function(req,res,next){
 	res.header('Access-Control-Allow-Origin',"*")
 	var title=req.body.title;
-	var detail=req.body.detail;
-	connection.query(`INSERT INTO model (title,detail) VALUES ('${title}','${detail}')`, function(err, rows, fields) {
+	var cont = req.body.cont
+	pool.query(`INSERT INTO model (title,cont) VALUES ('${title}','${cont}')`, function(err, rows, fields) {
 	    if(rows!=""||rows!=null){
-	        connection.query("SELECT * FROM model",function(err,rows){
+	        pool.query("SELECT * FROM model",function(err,rows){
 	        	res.send(rows)
 	      	})
 	    }
@@ -42,7 +43,7 @@ router.post('/insert',function(req,res,next){
 
 router.post('/select',function(req,res,next){
 	var id=req.body.id;
-	connection.query(`SELECT id,title,detail FROM model WHERE id=${id}`,function(err, rows, fields) {
+	pool.query(`SELECT id,title,cont FROM model WHERE id=${id}`,function(err, rows, fields) {
 	    res.header('Access-Control-Allow-Origin',"*")
 	    if (err) throw err;
 	    res.send(rows);
@@ -52,13 +53,15 @@ router.post('/select',function(req,res,next){
 router.post('/updata',function(req,res,next){
 	var id=req.body.id;
 	var title=req.body.title;
-	var detail=req.body.detail;
-	console.log(id,title,detail)
-	connection.query(`UPDATE work SET title='${title}',detail='${detail}' WHERE id=${id}`,function(err, rows, fields) {
+	var cont = req.body.cont
+	console.log(id,title)
+	pool.query(`UPDATE model SET title='${title}',cont='${cont}' WHERE id=${id}`,function(err, rows, fields) {
 	    res.header('Access-Control-Allow-Origin',"*")
 	    if (err) throw err;
 	    console.log(1)
 	    res.send(rows);
 	})
 })
+
+// 我的团队
 module.exports = router;
