@@ -44,13 +44,13 @@ function changNum(a){
 }
 timer=setInterval(function(){
 	aa()
-},3000)
+},4000)
 $('.yi1 h').hover(function(){
 	clearInterval(timer)
 },function(){
 	timer=setInterval(function(){
 	aa()
-	},3000)
+	},4000)
 })
 $('.yuan li').click(function(){
 	var now=num
@@ -134,14 +134,14 @@ $('.l').click(function(){
 
 timerr=setInterval(function(){
 	$('.r').click()
-},3000)
+},4000)
 
 $('.n_ul').hover(function(){
 	clearInterval(timerr)
 },function(){
 	timerr=setInterval(function(){
 	$('.r').click()
-	},3000)
+	},4000)
 })
 
 

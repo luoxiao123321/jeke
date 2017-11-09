@@ -32,7 +32,7 @@ router.post('/insert',function(req,res,next){
 	var title=req.body.title;
 	var content = req.body.content;
 	var img = req.body.img
-	pool.query(`INSERT INTO serve (title,img,content) VALUES ('${title}','${content}','${img}')`, function(err, rows, fields) {
+	pool.query(`INSERT INTO serve (title,img,content) VALUES ('${title}','${img}','${content}')`, function(err, rows, fields) {
 	    if(rows!=""||rows!=null){
 	        pool.query("SELECT * FROM serve",function(err,rows){
 	        	res.send(rows)

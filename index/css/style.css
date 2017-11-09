@@ -70,17 +70,16 @@ body{
 	width: 1349px;
 	height: 100%;
 	float: left;
-	background: yellow;
 	list-style: none;
 }
-.lun li+li{
-	background: yellowgreen;
+.lun li img{
+	width: 100%;
 }
 .yuan{
 	position: absolute;
 	z-index: 2;
 	list-style: none;
-	left: 550px;
+	left: 590px;
 	top: 600px;
 }
 .yuan li{
@@ -256,13 +255,26 @@ h2{
 	width: 100%;
 	height: 749px;
 	overflow: hidden;
+	position: relative;
 /*	background-color: rgba(7,7,7,0.8)*/
+}
+#we h{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 1;
 }
 .we{
 	width: 910px;
 	margin: 0 auto;
 	overflow:  hidden;
 	margin-top: 288px;
+	position: relative;
+	z-index: 2;
 }
 h3{
 	text-align: center;
@@ -278,7 +290,7 @@ h3{
 }
 .we p{
 	text-align: center;
-	color: rgb(102, 102, 102);
+	color: #fff;
 	font-size: 14px;
 	line-height: 1.5em;
 }
@@ -354,7 +366,7 @@ h3{
 .nei_u li{
 	width: 1180px;
 	height: 100%;
-	background: red;
+	/*background: red;*/
 	float: left;
 	list-style: none;
 }
@@ -364,13 +376,8 @@ h3{
 	float: left;
 	margin: 0 5px;
 }
-.jieshao i{
-	width: 284px;
-	height: 284px;
-	display: block;
-	background: yellowgreen;
-}
-.jieshao i img{
+
+.jieshao img{
 	width: 284px;
 	height: 284px;
 }
@@ -503,27 +510,28 @@ h3{
 .serve_buttom_u{
 	width: 307px;
 	height: 211px;
-	background: red;
 	float: left;
 	margin: 0 5px;
 }
-.serve_buttom_u div{
-	width: 100%;
-	height: 72px;
-	background: yellowgreen;
+.serve_buttom_u img{
+	width: 68px;
+	height: 68px;
+	margin-left: 120px;
 }
 .serve_buttom_u i{
 	display: block;
 	color: #373A41;
-	font-size: 16px;
+	font-size: 18px;
 	padding-top: 10px;
     padding-bottom: 10px;
+    text-align: center;
     font-style:normal;
 }
 .serve_buttom_u span{
 	display: block;
-	color: #666666;
+	color: rgb(102, 102, 102);
 	font-size: 14px;
+    line-height: 1.5em;
 }
 
 
@@ -597,16 +605,38 @@ h4{
 	position: absolute;
 	top: 0;
 	left: 0;
+	padding-top: 30px;
 }
 .n_ul li{
 	width: 866px;
 	height: 100%;
 	float: left;
-	background: yellow;
 	list-style: none;
 }
+.yuantu{
+	width: 132px;
+	height: 132px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 10px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.n_ul li span{
+	font-size: 16px;
+	display: block;
+	color: rgb(255, 255, 255);
+	line-height: 1.6;
+	font-family: 微软雅黑, Helvetica, Arial, Verdana, sans-serif;
+}
+.n_ul li span+span{
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	line-height: 1.5;
+	margin-top: 15px;
+}
 .n_ul li+li{
-	background: red;
+	/*background: red;*/
 }
 
 
