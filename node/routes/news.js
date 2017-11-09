@@ -9,7 +9,7 @@ var pool = mysql.createPool({
 })
 
 /* GET home page. */
-// 模板功能
+// 新闻
 router.get('/title',function(req,res,next){
 	pool.query('SELECT id,title,content,author FROM news', function(err, rows, fields) {
     	res.header('Access-Control-Allow-Origin',"*")

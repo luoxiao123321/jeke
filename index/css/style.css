@@ -169,11 +169,28 @@ h2{
 	color: black;
 	padding-top: 80px;
 }
-.product_top i{
-	width: 100%;
-	display: block;
-	text-align: center;
-	padding: 5px 0;
+.tubiao{
+	height: 37px;
+	width: 170px;
+	margin: 0 auto;
+}
+#xian{
+	width: 63px;
+	height: 1px;
+	float: left;
+	display:  inline-block;
+	border-width: 1px 0px 0px;
+    border-style: solid;
+    margin-top: 10px;
+    border-color: rgb(221, 221, 221);
+}
+#tu_i{
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: red;
+	margin: 0 10px;
 }
 .product_top p{
 	text-align: center;
@@ -202,12 +219,12 @@ h2{
 	padding-top: 50px;
 	margin: 0 auto;
 }
-.function_top i{
+/*.function_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding: 5px 0;
-}
+}*/
 .function_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);
@@ -282,12 +299,12 @@ h3{
 	color: #fff;
 	line-height: 0;
 }
-.we i{
+/*.we i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding: 5px 0;
-}
+}*/
 .we p{
 	text-align: center;
 	color: #fff;
@@ -311,12 +328,12 @@ h3{
 	width: 910px;
 	margin: 0 auto;
 }
-.team_top i{
+/*.team_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding: 5px 0;
-}
+}*/
 .team_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);
@@ -406,13 +423,13 @@ h3{
 	width: 910px;
 	margin: 0 auto;
 }
-.project_top i{
+/*.project_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding: 5px 0;
 	margin-bottom: 40px;
-}
+}*/
 .project_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);
@@ -428,7 +445,6 @@ h3{
 	width: 100%;
 	height: 40px;
 	text-align: center;
-	background: yellow;
 }
 .project_buttom p span{
 	color: #444444;
@@ -439,7 +455,7 @@ h3{
 	font-weight: bold;
 }
 .tu{
-	display: none;
+	/*display: none;*/
 	background: red;
 }
 .tu div{
@@ -464,7 +480,7 @@ h3{
 	width: 303px;
 	height: 181px;
 	display: block;
-	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,.7);
 	position: absolute;
 	top:-50px;
 	opacity: 0;
@@ -488,12 +504,12 @@ h3{
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
-.serve_top i{
+/*.serve_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding:0 0 40px 0;
-}
+}*/
 .serve_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);
@@ -512,10 +528,13 @@ h3{
 	height: 211px;
 	float: left;
 	margin: 0 5px;
+	background: ;
 }
 .serve_buttom_u img{
-	width: 68px;
-	height: 68px;
+	width: 58px;
+	height: 58px;
+	padding: 10px 10px;
+	box-sizing: border-box;
 	margin-left: 120px;
 }
 .serve_buttom_u i{
@@ -560,12 +579,12 @@ h4{
 	color: #fff;
 	padding-top: 50px;
 }
-.evaluate_top i{
+/*.evaluate_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding:4px;
-}
+}*/
 .evaluate_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);
@@ -660,12 +679,12 @@ h4{
 	margin: 0 auto;
 	margin-top: 100px;
 }
-.news_top i{
+/*.news_top i{
 	width: 100%;
 	display: block;
 	text-align: center;
 	padding: 10px 0;
-}
+}*/
 .news_top p{
 	text-align: center;
 	color: rgb(102, 102, 102);

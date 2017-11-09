@@ -146,9 +146,9 @@ $('.n_ul').hover(function(){
 
 
 
-$('.tu:eq(0)').show()
+//$('.tu:eq(0)').show()
 $('.project_buttom p span').click(function(){
 	var index=$(this).index()
 	$(this).addClass('checked').siblings().removeClass('checked')
-	$('.tu').hide().eq(index).show()
+//	$('.tu').hide().eq(index).show()
 })
