@@ -1,18 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=8">-->
 	<meta charset="UTF-8" />
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
+	 <script src="node_modules/jquery/dist/jquery.js"></script>
+       
+  
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+     <script src="node_modules/summernote/dist/summernote.js"></script>
+      <link rel="stylesheet" type="text/css" href="node_modules/summernote/dist/summernote.css">
+      <link href="node_modules/bootstrap/dist/css/dashboard.css" rel="stylesheet">
 
-
+	
 </head>
-<body>
+<body><a name='fan'></a>
 	<div class="wary">
+		
+		<div class="you">
+			<span class="glyphicon glyphicon-earphone"></span>
+			<span class="er glyphicon glyphicon-user" id="er"></span>
+			<span class="glyphicon glyphicon-envelope"></span>
+			<span class="fan"><a href="#fan" class="glyphicon glyphicon-arrow-up"></a></span>
+		</div>
+		<div class="yin" id="yin">
+			
+		</div>
 		<div id="xi">
+			<img src="img/loog.png">
 			<ul>
 				<li>首页</li>
 				<li>产品</li>
@@ -65,7 +86,7 @@
 				<!--<i><img src="img/1.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-eye-open"></i>
 					<span id="xian"></span>
 				</div>
 				<p>亲，本版本是最简单的单页式模板，不需要创建内页</p>
@@ -85,7 +106,7 @@
 				<!--<i><img src="img/2.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-comment"></i>
 					<span id="xian"></span>
 				</div>
 				<p>这些文字都是可以根据您的需要自行更改的，所以不要怕和您的需要不一样哦.</p>
@@ -111,7 +132,7 @@
 				<!--<i><img src="img/2.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-bullhorn"></i>
 					<span id="xian"></span>
 				</div>
 				<p>起飞页不仅是一个方便快捷的构建网站的自助建站平台，更重要的是，我们为中国用户提供了更多贴心的服务：网站备案、自动备份、快速恢复以及</p>
@@ -129,7 +150,7 @@
 				<!--<i><img src="img/4.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-bell"></i>
 					<span id="xian"></span>
 				</div>
 				<p>介绍一下您的强大的团队吧。几行热情的自我介绍可以迅速的拉近您和访客的距离。</p>
@@ -165,7 +186,7 @@
 				<!--<i><img src="img/5.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-certificate"></i>
 					<span id="xian"></span>
 				</div>
 				<p>一个没打过仗的军队很难有说服力，当然打了很多败仗的故事也不会增加任何说服力。所以说说您成功的项目经验吧，如果没有，也可以有哦。</p>
@@ -221,7 +242,7 @@
 				<!--<i><img src="img/6.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-folder-open"></i>
 					<span id="xian"></span>
 				</div>
 				<p>起飞页不仅是一个方便快捷的构建网站的自助建站平台，更重要的是，我们为中国用户提供了更多贴心的服务：网站备案、自动备份、快速恢复以及</p>
@@ -241,7 +262,7 @@
 				<!--<i><img src="img/6.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-retweet"></i>
 					<span id="xian"></span>
 				</div>
 				<p>起飞页不仅是一个方便快捷的构建网站的自助建站平台，更重要的是，我们为中国用户提供了更多贴心的服务：网站备案、自动备份、快速恢复以及网</p>
@@ -276,7 +297,7 @@
 				<!--<i><img src="img/4.png"></i>-->
 				<div class="tubiao">
 					<span id="xian"></span>
-					<i id="tu_i"></i>
+					<i id="tu_i" class="glyphicon glyphicon-globe"></i>
 					<span id="xian"></span>
 				</div>
 				<p>介绍一下您的强大的团队吧。几行热情的自我介绍可以迅速的拉近您和访客的距离。</p>
@@ -298,6 +319,23 @@
 		<script type="text/javascript" src="js/jq.js"></script>
 		<script type="text/javascript" src="js/diaoyon.js"></script>
 
+
+
+		<script>
+			var er = document.getElementById('er');
+        	var yin = document.getElementById('yin');
+        	var isClick = false;
+        	er.onclick = function(){
+            if(isClick){
+                yin.style.display = 'none';
+                isClick = false;
+            }
+            else{
+                yin.style.display = 'block';
+                isClick = true;
+            }
+           }
+		</script>
 	</div>
 </body>
 </html>

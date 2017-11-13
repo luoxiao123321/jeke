@@ -6,6 +6,45 @@ body{
 .wary{
 	width: 100%;
 }
+.you{
+	width: 50px;
+	height: 200px;
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 10;
+	background: #8d9095;
+}
+.you span{
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	display: block;
+	line-height: 50px;
+	font-size: 22px;
+	color: #fff;
+}
+.you span:nth-child(2){
+	background: rgb(255, 81, 0);
+}
+.you span:hover{
+	background: rgb(255, 81, 0);
+}
+.fan a{
+	color: #fff;
+}
+.fan a:hover{
+	text-decoration: none;
+}
+.yin{
+	width: 150px;
+	height: 150px;
+	background: red;
+	position: fixed;
+	right: 130px;
+	top: 220px;
+	display: none;
+}
 #xi{
 	width: 100%;
 	padding: 0 40px;
@@ -43,7 +82,6 @@ body{
 #home{
 	width: 100%;
 	height: 660px;
-	background: yellow;
 	position: relative;
 	overflow:  hidden;
 }
@@ -189,8 +227,9 @@ h2{
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	background: red;
+	font-size: 22px;
 	margin: 0 10px;
+	color: #ff5100;
 }
 .product_top p{
 	text-align: center;
@@ -365,7 +404,7 @@ h3{
 	margin-left: 8px;
 }
 .nei{
-	width: 1180px;
+	width: 1170px;
 	height: 100%;
 	float: left;
 	overflow: hidden;
@@ -381,7 +420,7 @@ h3{
 	left: 0;
 }
 .nei_u li{
-	width: 1180px;
+	width: 1170px;
 	height: 100%;
 	/*background: red;*/
 	float: left;
@@ -391,7 +430,7 @@ h3{
 	width: 284px;
 	height: 100%;
 	float: left;
-	margin: 0 5px;
+	margin: 0 4px;
 }
 
 .jieshao img{

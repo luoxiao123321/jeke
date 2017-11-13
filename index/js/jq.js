@@ -152,3 +152,5 @@ $('.project_buttom p span').click(function(){
 	$(this).addClass('checked').siblings().removeClass('checked')
 //	$('.tu').hide().eq(index).show()
 })
+
+
